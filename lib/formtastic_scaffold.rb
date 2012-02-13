@@ -1,4 +1,3 @@
-require 'formtastic_bootstrap'
 require 'rails'
 
 module FormtasticScaffold
