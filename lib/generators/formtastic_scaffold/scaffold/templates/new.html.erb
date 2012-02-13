@@ -1,3 +1,3 @@
-<%%= semantic_form_for @<%= singular_table_name %> do |f| %>
+<%%= semantic_form_for @<%= singular_table_name %>, :html => {:class => 'form-horizontal'} do |f| %>
   <%%= render :partial => "form", :locals => {:f => f} %>
 <%% end %>
