@@ -1,6 +1,6 @@
-<h1>Editing <%= singular_table_name %></h1>
+<%%= semantic_form_for @<%= singular_table_name %>, :html => {:class => 'form-horizontal'} do |f| %>
+	<input name="_method" type="hidden" value="put" />
+  <%%= render :partial => "form", :locals => {:f => f} %>
+<%% end %>
 
-<%%= render 'form' %>
-
-<%%= link_to 'Show', @<%= singular_table_name %> %> |
 <%%= link_to 'List', <%= index_helper %>_path %>

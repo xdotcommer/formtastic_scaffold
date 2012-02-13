@@ -1,6 +1,6 @@
 	<%%= f.semantic_errors %>
 
-	<%%= f.inputs "Edit <%= human_name %>" do %>
+	<%%= f.inputs "<%= human_name %> Details" do %>
 
 		<% attributes.each do |attribute| -%>
 			<%%= f.input :<%= attribute.name %> %>
@@ -10,5 +10,5 @@
 
 	<%%= f.buttons do %>
 	  <%%= f.commit_button %>
-		<%%= link_to "Cancel", products_path, :class => 'btn' %>
+		<%%= link_to "Cancel", products_path, <%= key_value :class, 'btn' %> %>
 	<%% end %>
