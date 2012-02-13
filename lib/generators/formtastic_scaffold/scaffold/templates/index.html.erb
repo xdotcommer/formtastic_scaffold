@@ -14,7 +14,7 @@
   <tr>
 <% attributes.each do |attribute| -%>
 	<% if %w(name title).include? attribute.name %>
-		<th><%%= link_to <%= singular_table_name %>.<%= attribute.name %>, <%= singular_table_name %></th>
+		<th><%%= link_to <%= singular_table_name %>.<%= attribute.name %>, <%= singular_table_name %> %></th>
 	<% else %>
     <td><%%= <%= singular_table_name %>.<%= attribute.name %> %></td>
 	<% end %>
